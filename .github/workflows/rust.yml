@@ -28,4 +28,5 @@ jobs:
           arch: x86_64 # Other valid options for linux: 'aarch64'
           # Add your build steps below
       - name: Build Rust API
-        run: ls
+        uses: actions/checkout@v4
+        run:  cargo lambda build --release
