@@ -23,10 +23,10 @@ jobs:
         uses: jaxxstorm/action-install-gh-release@v1.9.0
         with:
           repo: cargo-lambda/cargo-lambda
-          tag: v0.14.0 # Remove this if you want to grab always the latest version
-          platform: linux # Other valid options: 'windows' or 'darwin'
-          arch: x86_64 # Other valid options for linux: 'aarch64'
+          tag: v0.14.0 
+          platform: linux 
+          arch: x86_64 
           # Add your build steps below
       - name: Build Rust API
         uses: actions/checkout@v4
-      - run:  cargo lambda2 build --release
+      - run:  cargo lambda build --release
