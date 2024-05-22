@@ -11,7 +11,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: codebuild-GitHubActionsDemo-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
