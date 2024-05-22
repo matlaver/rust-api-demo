@@ -28,5 +28,4 @@ jobs:
           arch: x86_64 # Other valid options for linux: 'aarch64'
           # Add your build steps below
       - name: Build Rust API
-        run: cargo lambda build --release
-        working-directory: ../
+        run: ls
