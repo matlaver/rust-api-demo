@@ -29,4 +29,4 @@ jobs:
           # Add your build steps below
       - name: Build Rust API
         uses: actions/checkout@v4
-      - run:  cargo lambda build --release
+      - run:  cargo lambda2 build --release
