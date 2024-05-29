@@ -15,6 +15,7 @@ jobs:
     steps:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
+      - run: apt-get install xz-utils
       - name: Install Zig toolchain
         uses: goto-bus-stop/setup-zig@v2
       - name: Install Cargo Lambda
