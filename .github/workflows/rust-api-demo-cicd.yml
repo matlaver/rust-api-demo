@@ -16,7 +16,7 @@ jobs:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
       - name: xy
-        uses: tukaani-project/xz@stable
+        uses: tukaani-project/xz@v5.6.2
       - name: Install Zig toolchain
         uses: goto-bus-stop/setup-zig@v2
       - name: Install Cargo Lambda
