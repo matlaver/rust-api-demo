@@ -15,7 +15,8 @@ jobs:
     steps:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
-      - run: sudo yum install xz
+      - name: xy
+        uses: tukaani-project/xz@stable
       - name: Install Zig toolchain
         uses: goto-bus-stop/setup-zig@v2
       - name: Install Cargo Lambda
