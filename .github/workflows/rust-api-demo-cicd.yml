@@ -11,7 +11,7 @@ env:
 
 jobs:
   build:
-    runs-on: codebuild-GitHubActionsDemo-${{ github.run_id }}-${{ github.run_attempt }}
+    runs-on: codebuild-GitHubActionsDemo-${{ github.run_id }}-${{ github.run_attempt }}-arm-lambda-nodejs18-1GB
     steps:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
