@@ -15,9 +15,10 @@ jobs:
     steps:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
-      - run: dnf install xz
       - name: Install Zig toolchain
-        uses: goto-bus-stop/setup-zig@v2
+        uses: korandoru/setup-zig@v1
+        with:
+          zig-version: 0.10.0
       - name: Install Cargo Lambda
         uses: jaxxstorm/action-install-gh-release@v1.12.0
         with:
@@ -29,4 +30,4 @@ jobs:
       - name: Build Rust API
         uses: actions/checkout@v4
       - run: cargo lambda build --release
-      - run: cargo lambda deploy 
+      - run: cargo lambda deploy
