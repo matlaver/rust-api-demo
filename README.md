@@ -1,7 +1,1 @@
 # rust-api-demo
-
-
-test
-
-
- 
